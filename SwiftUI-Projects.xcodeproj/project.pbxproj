@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D8C7D8372B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */; };
-		D8C7D83B2B4A797C00A7B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */; };
 		D8C7D83E2B4A797C00A7B974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */; };
 		D8C7D86E2B4A7AAA00A7B974 /* OpenWeather_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C7D85D2B4A7A3D00A7B974 /* OpenWeather_Module.framework */; };
+		D8C7D8992B4B0F4B00A7B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D8972B4B0F4B00A7B974 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,14 +21,22 @@
 			remoteGlobalIDString = D8C7D84E2B4A7A3C00A7B974;
 			remoteInfo = "OpenWeather-Module";
 		};
+		D8C7D8B22B4B0F8B00A7B974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C7D8AE2B4B0F8A00A7B974 /* Apple-Framework-Module.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8C7D8A42B4B0F8A00A7B974;
+			remoteInfo = "Apple-Framework-Module";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D8C7D8332B4A797B00A7B974 /* SwiftUI-Projects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Projects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ProjectsApp.swift; sourceTree = "<group>"; };
-		D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "OpenWeather-Module.xcodeproj"; path = "OpenWeather-Module/OpenWeather-Module.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		D8C7D8972B4B0F4B00A7B974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C7D8AE2B4B0F8A00A7B974 /* Apple-Framework-Module.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Apple-Framework-Module.xcodeproj"; path = "Apple-Framework-Module/Apple-Framework-Module.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +71,10 @@
 		D8C7D8352B4A797B00A7B974 /* SwiftUI-Projects */ = {
 			isa = PBXGroup;
 			children = (
+				D8C7D8AE2B4B0F8A00A7B974 /* Apple-Framework-Module.xcodeproj */,
 				D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */,
 				D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */,
-				D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */,
+				D8C7D8972B4B0F4B00A7B974 /* Assets.xcassets */,
 				D8C7D83C2B4A797C00A7B974 /* Preview Content */,
 			);
 			path = "SwiftUI-Projects";
@@ -92,6 +101,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C7D8AF2B4B0F8A00A7B974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7D8B32B4B0F8B00A7B974 /* Apple_Framework_Module.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +159,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = D8C7D8AF2B4B0F8A00A7B974 /* Products */;
+					ProjectRef = D8C7D8AE2B4B0F8A00A7B974 /* Apple-Framework-Module.xcodeproj */;
+				},
+				{
 					ProductGroup = D8C7D8592B4A7A3C00A7B974 /* Products */;
 					ProjectRef = D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */;
 				},
@@ -161,6 +182,13 @@
 			remoteRef = D8C7D85C2B4A7A3D00A7B974 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D8C7D8B32B4B0F8B00A7B974 /* Apple_Framework_Module.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Apple_Framework_Module.framework;
+			remoteRef = D8C7D8B22B4B0F8B00A7B974 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -169,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8C7D83E2B4A797C00A7B974 /* Preview Assets.xcassets in Resources */,
-				D8C7D83B2B4A797C00A7B974 /* Assets.xcassets in Resources */,
+				D8C7D8992B4B0F4B00A7B974 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

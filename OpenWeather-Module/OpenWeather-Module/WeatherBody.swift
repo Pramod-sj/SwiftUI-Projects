@@ -124,9 +124,14 @@ struct BackgroundView: View {
     var isNightMode: Bool
     
     var body: some View {
-        LinearGradient(colors: [isNightMode ? .black : .blue,
-                                isNightMode ? .gray: .lightBlue], startPoint: .topTrailing, endPoint: .bottomTrailing)
+        //LinearGradient(colors: [isNightMode ? .black : .blue,
+//                                isNightMode ? .gray: .lightBlue], startPoint: .topTrailing, endPoint: .bottomTrailing)
+ //           .ignoresSafeArea()
+        
+        ContainerRelativeShape()
+            .fill(isNightMode ? Color.blue.gradient : Color.black.gradient)
             .ignoresSafeArea()
+        
     }
 }
 
