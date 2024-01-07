@@ -41,7 +41,7 @@ public struct WeatherBody: View {
     
     public var body: some View {
         ZStack{
-            BackgroundView(isNightMode: $isNightMode)
+            BackgroundView(isNightMode:isNightMode)
             VStack{
                 
                 CityNameView(name: "Mumbai, MH")
@@ -121,7 +121,7 @@ struct WetherInfoItemView: View {
 
 struct BackgroundView: View {
  
-    @Binding var isNightMode: Bool
+    var isNightMode: Bool
     
     var body: some View {
         LinearGradient(colors: [isNightMode ? .black : .blue,
