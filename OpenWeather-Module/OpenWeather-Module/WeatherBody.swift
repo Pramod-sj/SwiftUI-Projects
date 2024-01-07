@@ -126,7 +126,7 @@ struct BackgroundView: View {
     var body: some View {
         LinearGradient(colors: [isNightMode ? .black : .blue,
                                 isNightMode ? .gray: .lightBlue], startPoint: .topTrailing, endPoint: .bottomTrailing)
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .ignoresSafeArea()
     }
 }
 
