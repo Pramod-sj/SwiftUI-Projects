@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import OpenWeather_Module
 
 @main
 struct SwiftUI_ProjectsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherBody()
         }
     }
 }

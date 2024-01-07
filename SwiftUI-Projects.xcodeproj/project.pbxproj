@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		D8C7D8372B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */; };
-		D8C7D8392B4A797B00A7B974 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8382B4A797B00A7B974 /* ContentView.swift */; };
 		D8C7D83B2B4A797C00A7B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */; };
 		D8C7D83E2B4A797C00A7B974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */; };
+		D8C7D86E2B4A7AAA00A7B974 /* OpenWeather_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C7D85D2B4A7A3D00A7B974 /* OpenWeather_Module.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8C7D85C2B4A7A3D00A7B974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8C7D84E2B4A7A3C00A7B974;
+			remoteInfo = "OpenWeather-Module";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D8C7D8332B4A797B00A7B974 /* SwiftUI-Projects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Projects.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ProjectsApp.swift; sourceTree = "<group>"; };
-		D8C7D8382B4A797B00A7B974 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "OpenWeather-Module.xcodeproj"; path = "OpenWeather-Module/OpenWeather-Module.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C7D86E2B4A7AAA00A7B974 /* OpenWeather_Module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,7 @@
 			children = (
 				D8C7D8352B4A797B00A7B974 /* SwiftUI-Projects */,
 				D8C7D8342B4A797B00A7B974 /* Products */,
+				D8C7D86D2B4A7AAA00A7B974 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +63,8 @@
 		D8C7D8352B4A797B00A7B974 /* SwiftUI-Projects */ = {
 			isa = PBXGroup;
 			children = (
+				D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */,
 				D8C7D8362B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift */,
-				D8C7D8382B4A797B00A7B974 /* ContentView.swift */,
 				D8C7D83A2B4A797C00A7B974 /* Assets.xcassets */,
 				D8C7D83C2B4A797C00A7B974 /* Preview Content */,
 			);
@@ -65,6 +77,21 @@
 				D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8C7D8592B4A7A3C00A7B974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7D85D2B4A7A3D00A7B974 /* OpenWeather_Module.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C7D86D2B4A7AAA00A7B974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,12 +140,28 @@
 			mainGroup = D8C7D82A2B4A797B00A7B974;
 			productRefGroup = D8C7D8342B4A797B00A7B974 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8C7D8592B4A7A3C00A7B974 /* Products */;
+					ProjectRef = D8C7D8582B4A7A3C00A7B974 /* OpenWeather-Module.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D8C7D8322B4A797B00A7B974 /* SwiftUI-Projects */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D8C7D85D2B4A7A3D00A7B974 /* OpenWeather_Module.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenWeather_Module.framework;
+			remoteRef = D8C7D85C2B4A7A3D00A7B974 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D8C7D8312B4A797B00A7B974 /* Resources */ = {
@@ -137,7 +180,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C7D8392B4A797B00A7B974 /* ContentView.swift in Sources */,
 				D8C7D8372B4A797B00A7B974 /* SwiftUI_ProjectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
