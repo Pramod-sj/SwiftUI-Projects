@@ -8,15 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D8C7D8A82B4B0F8A00A7B974 /* Apple_Framework_Module.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C7D8A72B4B0F8A00A7B974 /* Apple_Framework_Module.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D8C7D8B52B4B0FB600A7B974 /* FramworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8B42B4B0FB600A7B974 /* FramworkGridView.swift */; };
 		D8C7D8B72B4B0FF400A7B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D8B62B4B0FF400A7B974 /* Assets.xcassets */; };
+		D8C7D8BA2B4B116F00A7B974 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8B92B4B116F00A7B974 /* FrameworkModel.swift */; };
+		D8C7D8BC2B4B1F5F00A7B974 /* FrameworkDetailModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8BB2B4B1F5F00A7B974 /* FrameworkDetailModal.swift */; };
+		D8C7D8BE2B4B282B00A7B974 /* FrameworkGridViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8BD2B4B282B00A7B974 /* FrameworkGridViewViewModel.swift */; };
+		D8C7D8C02B4B2A6B00A7B974 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8BF2B4B2A6B00A7B974 /* FrameworkGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8C7D8A42B4B0F8A00A7B974 /* Apple_Framework_Module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Apple_Framework_Module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C7D8A72B4B0F8A00A7B974 /* Apple_Framework_Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Apple_Framework_Module.h; sourceTree = "<group>"; };
-		D8C7D8B42B4B0FB600A7B974 /* FramworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramworkGridView.swift; sourceTree = "<group>"; };
 		D8C7D8B62B4B0FF400A7B974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C7D8B92B4B116F00A7B974 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
+		D8C7D8BB2B4B1F5F00A7B974 /* FrameworkDetailModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailModal.swift; sourceTree = "<group>"; };
+		D8C7D8BD2B4B282B00A7B974 /* FrameworkGridViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewViewModel.swift; sourceTree = "<group>"; };
+		D8C7D8BF2B4B2A6B00A7B974 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,11 +55,22 @@
 		D8C7D8A62B4B0F8A00A7B974 /* Apple-Framework-Module */ = {
 			isa = PBXGroup;
 			children = (
+				D8C7D8B82B4B115500A7B974 /* Models */,
 				D8C7D8A72B4B0F8A00A7B974 /* Apple_Framework_Module.h */,
-				D8C7D8B42B4B0FB600A7B974 /* FramworkGridView.swift */,
+				D8C7D8BF2B4B2A6B00A7B974 /* FrameworkGridView.swift */,
 				D8C7D8B62B4B0FF400A7B974 /* Assets.xcassets */,
+				D8C7D8BB2B4B1F5F00A7B974 /* FrameworkDetailModal.swift */,
+				D8C7D8BD2B4B282B00A7B974 /* FrameworkGridViewViewModel.swift */,
 			);
 			path = "Apple-Framework-Module";
+			sourceTree = "<group>";
+		};
+		D8C7D8B82B4B115500A7B974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7D8B92B4B116F00A7B974 /* FrameworkModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C7D8B52B4B0FB600A7B974 /* FramworkGridView.swift in Sources */,
+				D8C7D8C02B4B2A6B00A7B974 /* FrameworkGridView.swift in Sources */,
+				D8C7D8BE2B4B282B00A7B974 /* FrameworkGridViewViewModel.swift in Sources */,
+				D8C7D8BC2B4B1F5F00A7B974 /* FrameworkDetailModal.swift in Sources */,
+				D8C7D8BA2B4B116F00A7B974 /* FrameworkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

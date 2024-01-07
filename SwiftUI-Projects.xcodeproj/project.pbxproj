@@ -11,6 +11,7 @@
 		D8C7D83E2B4A797C00A7B974 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D83D2B4A797C00A7B974 /* Preview Assets.xcassets */; };
 		D8C7D86E2B4A7AAA00A7B974 /* OpenWeather_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C7D85D2B4A7A3D00A7B974 /* OpenWeather_Module.framework */; };
 		D8C7D8992B4B0F4B00A7B974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C7D8972B4B0F4B00A7B974 /* Assets.xcassets */; };
+		D8C7D8C12B4B2AA100A7B974 /* Apple_Framework_Module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C7D8B32B4B0F8B00A7B974 /* Apple_Framework_Module.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C7D8C12B4B2AA100A7B974 /* Apple_Framework_Module.framework in Frameworks */,
 				D8C7D86E2B4A7AAA00A7B974 /* OpenWeather_Module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

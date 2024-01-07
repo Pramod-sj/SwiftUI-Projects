@@ -7,12 +7,13 @@
 
 import SwiftUI
 import OpenWeather_Module
+import Apple_Framework_Module
 
 @main
 struct SwiftUI_ProjectsApp: App {
     var body: some Scene {
         WindowGroup {
-            WeatherBody()
+            FrameworkGridView()
         }
     }
 }
