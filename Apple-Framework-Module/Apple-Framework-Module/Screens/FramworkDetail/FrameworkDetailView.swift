@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
+import Foundation
 
 
 #Preview {
-    FrameworkDetailModal(framework: MockData.sampleFramework){}
+    FrameworkDetailView(framework: MockData.sampleFramework){}
 }
 
-struct FrameworkDetailModal : View {
+struct FrameworkDetailView : View {
     
     let framework: Framework
     
     let closeCallbak: () -> Void
+    
+    @State private var isWebViewPresented = false
     
     var body: some View {
         VStack {
@@ -46,14 +49,12 @@ struct FrameworkDetailModal : View {
             Spacer()
             
             Button(action: {
-                print("Hello I'm Button")
+                isWebViewPresented = true
             }, label: {
-                Text("Learn More")
-                    .frame(width: 180, height: 40)
-                    .foregroundColor(.white)
-                    .background(.red)
-                    .cornerRadius(10)
-            })
+                AFButton(label: "Learn More")
+            }).fullScreenCover(isPresented : $isWebViewPresented){
+                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+            }
             
         }
     }

@@ -11,9 +11,7 @@ final class FrameworkGridViewViewModel: ObservableObject{
     
     
     var selectedFramework: Framework?{
-        didSet {
-            isFrameworkSheetShowing = oldValue != nil
-        }
+        didSet { isFrameworkSheetShowing = true }
     }
     
     @Published var isFrameworkSheetShowing: Bool = false

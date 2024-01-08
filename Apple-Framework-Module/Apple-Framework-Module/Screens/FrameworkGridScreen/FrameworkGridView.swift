@@ -18,8 +18,7 @@ public struct FrameworkGridView : View{
     
     @StateObject var viewModel = FrameworkGridViewViewModel()
     
-    let columns : [GridItem] = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
-    
+    private let columns : [GridItem] = [GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
     
     public init(){}
     
@@ -36,7 +35,7 @@ public struct FrameworkGridView : View{
                 }.padding()
             }.navigationTitle("Apple Frameworks")
                 .sheet(isPresented: $viewModel.isFrameworkSheetShowing){
-                    FrameworkDetailModal(framework: viewModel.selectedFramework ?? MockData.sampleFramework,
+                    FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework,
                     closeCallbak: {
                         viewModel.isFrameworkSheetShowing = false
                     })
@@ -44,24 +43,4 @@ public struct FrameworkGridView : View{
         }
     }
     
-}
-
-
-struct FrameworkItem: View {
-    
-    let framework: Framework
-    
-    var body: some View {
-
-        VStack{
-            Image(resolveNameToImageResource(name: framework.imageName))
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width:80,height:80)
-            Text(framework.name)
-                .font(.title3)
-                .fontWeight(.bold)
-        }
-        
-    }
 }
