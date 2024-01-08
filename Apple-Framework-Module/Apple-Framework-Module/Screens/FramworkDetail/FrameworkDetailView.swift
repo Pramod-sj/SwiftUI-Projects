@@ -10,35 +10,49 @@ import Foundation
 
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework){}
+    FrameworkDetailView(
+        isModal: true,
+        framework: MockData.sampleFramework){}
 }
 
 struct FrameworkDetailView : View {
     
+    let isModal: Bool
+    
     let framework: Framework
     
     let closeCallbak: () -> Void
+    
+    init(isModal: Bool = true, framework: Framework, closeCallbak: @escaping () -> Void) {
+        self.isModal = isModal
+        self.framework = framework
+        self.closeCallbak = closeCallbak
+    }
     
     @State private var isWebViewPresented = false
     
     var body: some View {
         VStack {
             
-            HStack{
+            if(isModal){
+                
+                HStack{
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        closeCallbak()
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .imageScale(.large)
+                            .foregroundColor(Color(.label))
+                            .frame(width:44,height: 44)
+                    })
+                }.padding()
                 
                 Spacer()
                 
-                Button(action: {
-                    closeCallbak()
-                }, label: {
-                    Image(systemName: "xmark")
-                        .imageScale(.large)
-                        .foregroundColor(Color(.label))
-                        .frame(width:44,height: 44)
-                })
-            }.padding()
-       
-            Spacer()
+            }
             
             FrameworkItem(framework: framework)
             

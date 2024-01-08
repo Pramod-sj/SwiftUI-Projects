@@ -13,7 +13,7 @@ import Apple_Framework_Module
 struct SwiftUI_ProjectsApp: App {
     var body: some Scene {
         WindowGroup {
-            FrameworkGridView()
+            HomeView()
         }
     }
 }

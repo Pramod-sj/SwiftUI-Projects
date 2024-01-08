@@ -16,6 +16,8 @@
 		D8C7D8C32B4BC00100A7B974 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8C22B4BC00100A7B974 /* SafariView.swift */; };
 		D8C7D8C52B4BC4E300A7B974 /* FrameworkItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8C42B4BC4E300A7B974 /* FrameworkItemView.swift */; };
 		D8C7D8CC2B4BC73C00A7B974 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8CB2B4BC73C00A7B974 /* AFButton.swift */; };
+		D8C7D8D12B4BCA9800A7B974 /* FrameworkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8D02B4BCA9800A7B974 /* FrameworkListView.swift */; };
+		D8C7D8D72B4BE87200A7B974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C7D8D62B4BE87200A7B974 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		D8C7D8C22B4BC00100A7B974 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		D8C7D8C42B4BC4E300A7B974 /* FrameworkItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkItemView.swift; sourceTree = "<group>"; };
 		D8C7D8CB2B4BC73C00A7B974 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		D8C7D8D02B4BCA9800A7B974 /* FrameworkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListView.swift; sourceTree = "<group>"; };
+		D8C7D8D62B4BE87200A7B974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 		D8C7D8C62B4BC6C600A7B974 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D8C7D8CD2B4BC7BA00A7B974 /* FramworkDetail */,
+				D8C7D8D52B4BE86100A7B974 /* HomeScreen */,
+				D8C7D8CF2B4BCA7C00A7B974 /* FrameworkListScreen */,
 				D8C7D8C82B4BC6E900A7B974 /* FrameworkGridScreen */,
+				D8C7D8CD2B4BC7BA00A7B974 /* FramworkDetail */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -120,6 +126,22 @@
 				D8C7D8C22B4BC00100A7B974 /* SafariView.swift */,
 			);
 			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		D8C7D8CF2B4BCA7C00A7B974 /* FrameworkListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7D8D02B4BCA9800A7B974 /* FrameworkListView.swift */,
+			);
+			path = FrameworkListScreen;
+			sourceTree = "<group>";
+		};
+		D8C7D8D52B4BE86100A7B974 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D8C7D8D62B4BE87200A7B974 /* HomeView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C7D8D72B4BE87200A7B974 /* HomeView.swift in Sources */,
 				D8C7D8CC2B4BC73C00A7B974 /* AFButton.swift in Sources */,
 				D8C7D8C52B4BC4E300A7B974 /* FrameworkItemView.swift in Sources */,
 				D8C7D8C02B4B2A6B00A7B974 /* FrameworkGridView.swift in Sources */,
@@ -210,6 +233,7 @@
 				D8C7D8BC2B4B1F5F00A7B974 /* FrameworkDetailView.swift in Sources */,
 				D8C7D8BA2B4B116F00A7B974 /* FrameworkModel.swift in Sources */,
 				D8C7D8C32B4BC00100A7B974 /* SafariView.swift in Sources */,
+				D8C7D8D12B4BCA9800A7B974 /* FrameworkListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

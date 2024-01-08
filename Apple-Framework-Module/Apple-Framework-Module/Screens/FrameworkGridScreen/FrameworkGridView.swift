@@ -35,7 +35,8 @@ public struct FrameworkGridView : View{
                 }.padding()
             }.navigationTitle("Apple Frameworks")
                 .sheet(isPresented: $viewModel.isFrameworkSheetShowing){
-                    FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework,
+                    FrameworkDetailView(
+                        framework: viewModel.selectedFramework ?? MockData.sampleFramework,
                     closeCallbak: {
                         viewModel.isFrameworkSheetShowing = false
                     })
