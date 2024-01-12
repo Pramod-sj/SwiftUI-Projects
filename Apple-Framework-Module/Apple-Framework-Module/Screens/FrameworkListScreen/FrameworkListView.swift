@@ -18,7 +18,7 @@ struct FrameworkListView: View {
     var body: some View {
         NavigationView{
             List {
-                ForEach(MockData.frameworks){ framework in
+                ForEach(viewModel.frameworks){ framework in
                     
                     NavigationLink(destination: {
                         FrameworkDetailView(

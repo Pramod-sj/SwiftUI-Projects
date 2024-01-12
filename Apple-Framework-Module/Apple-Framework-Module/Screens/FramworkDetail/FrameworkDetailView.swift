@@ -23,7 +23,7 @@ struct FrameworkDetailView : View {
     
     let closeCallbak: () -> Void
     
-    init(isModal: Bool = true, framework: Framework, closeCallbak: @escaping () -> Void) {
+    init(isModal: Bool = true, framework: Framework, closeCallbak: @escaping () -> Void = {}) {
         self.isModal = isModal
         self.framework = framework
         self.closeCallbak = closeCallbak

@@ -9,6 +9,7 @@ import SwiftUI
 
 final class FrameworkGridViewViewModel: ObservableObject{
     
+    var frameworks = MockData.frameworks
     
     var selectedFramework: Framework?{
         didSet { isFrameworkSheetShowing = true }

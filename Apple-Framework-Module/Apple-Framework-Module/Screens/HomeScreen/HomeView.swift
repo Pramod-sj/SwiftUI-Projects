@@ -15,6 +15,8 @@ public struct HomeView: View {
     
     @State var isGridView = false
     
+    @State var isTogglerVisible = true
+    
     public init(){}
     
     public var body: some View {
@@ -26,25 +28,27 @@ public struct HomeView: View {
                 FrameworkListView()
             }
             
-            Divider()
-                                    
-            Button(action: {
-                isGridView.toggle()
-            }, label: {
-                //AFButton(label: "Toggle \(isGridView ? "List" : "Grid")")
-                Label(
-                    title: { Text("Toggle \(isGridView ? "List" : "Grid")") },
-                    icon: {
-                        Image(systemName: isGridView ? "list.bullet" : "square.grid.3x3")
-                    }
-                )
-            })
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .tint(.blue)
-            .buttonBorderShape(.roundedRectangle)
-            .padding()
-
+            if(isTogglerVisible){
+                
+                Divider()
+                
+                Button(action: {
+                    isGridView.toggle()
+                }, label: {
+                    //AFButton(label: "Toggle \(isGridView ? "List" : "Grid")")
+                    Label(
+                        title: { Text("Toggle \(isGridView ? "List" : "Grid")") },
+                        icon: {
+                            Image(systemName: isGridView ? "list.bullet" : "square.grid.3x3")
+                        }
+                    )
+                })
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .tint(.blue)
+                .buttonBorderShape(.roundedRectangle)
+                .padding()
+            }
         }
     }
     
